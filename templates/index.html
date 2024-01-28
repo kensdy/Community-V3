@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Community</h1>
+    </div>
+    <div class="posts-container">
+        <h2>Posts</h2>
+        <ul>
+            {% for post in posts %}
+                <li class="post">
+                    <a href="{{ url_for('post', post_id=post['id']) }}">
+                        {{ post['title'] }}
+                    </a>
+                    ({{ post['timestamp'] if post['timestamp'] is string else (post['timestamp'].strftime('%Y-%m-%d %H:%M:%S') if post['timestamp'] else '') }})
+                    by {{ post['author'] }}
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="create-post-link">
+            <a href="{{ url_for('create_post') }}">Criar Novo Post</a>
+        </div>
+    </div>
+</body>
+</html>
