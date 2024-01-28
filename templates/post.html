@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post['title'] }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="post-container">
+        <h1 class="post-title">{{ post['title'] }}</h1>
+        <p class="post-content">{{ post['content']|safe }}</p>
+        <p class="post-info">Postado por {{ post['author'] }} em 
+          {{ post['timestamp'] if post['timestamp'] is string else (post['timestamp'].strftime('%Y-%m-%d %H:%M:%S') if post['timestamp'] else '') }}
+        </p>
+        <div class="back-to-list-link">
+            <a href="{{ url_for('index') }}">Voltar para a lista de posts</a>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comentários</h2>
+            <ul>
+                {% for comment in post['comments'] %}
+                    <li>
+                        <strong>{{ comment['author'] }}</strong>: {{ comment['content'] }}
+                    </li>
+                {% endfor %}
+            </ul>
+            <div class="comment-form">
+                <h3>Deixe um comentário</h3>
+                <form method="post" action="{{ url_for('add_comment', post_id=post['id']) }}">
+                    <label for="comment-author">Nome:</label>
+                    <input type="text" id="comment-author" name="comment_author" required>
+
+                    <label for="comment-content">Comentário:</label>
+                    <textarea id="comment-content" name="comment_content" rows="4" required></textarea>
+
+                    <div class="form-buttons">
+                        <button type="submit">Comentar</button>
+                        <a href="{{ url_for('index') }}">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
