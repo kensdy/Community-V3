@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Post</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>Community</h1>
+    </div>
+    <div class="posts-container">
+        <h2>Criar Novo Post</h2>
+        <form method="post" action="{{ url_for('create_post') }}" class="create-post-form">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required class="input-field">
+
+            <label for="author">Seu Nome:</label>
+            <input type="text" id="author" name="author" required class="input-field">
+            
+            <label for="content">Mensagem:</label>
+            <textarea id="content" name="content" rows="4" required class="textarea-field"></textarea>
+            
+            <button type="submit" class="submit-button">Postar</button>
+        </form>
+        <div class="create-post-link">
+            <a href="{{ url_for('index') }}">Cancelar</a>
+        </div>
+    </div>
+</body>
+</html>
