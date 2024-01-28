@@ -31,7 +31,8 @@ def save_audit_data(ip_address, action):
 
 def get_client_ip():
     if request.headers.getlist("X-Forwarded-For"):
-        ip_address = request.headers.getlist("X-Forwarded-For")[0]
+        # Pega a primeira parte da lista dividida por vírgulas
+        ip_address = request.headers.getlist("X-Forwarded-For")[0].split(",")[0].strip()
     else:
         ip_address = request.environ.get('REMOTE_ADDR')
     return ip_address
