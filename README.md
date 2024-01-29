@@ -1,5 +1,24 @@
 # Community-V3
 
+**Conhecendo as Funcionalidades**
+
+O Community V3 oferece uma experiência de fórum simples e intuitiva, centrada em três páginas principais:
+
+### 1. Página Inicial (Home)
+
+A Página Inicial exibe uma lista de todos os posts já criados no site, organizados com os mais recentes no topo da lista. Esta é a porta de entrada para a comunidade, proporcionando uma visão abrangente das discussões em andamento.
+![Home](home.png)
+
+### 2. Página de Criação de Posts
+
+Na Página de Criação de Posts, os usuários têm a oportunidade de contribuir para a comunidade compartilhando suas ideias, experiências ou perguntas. Para criar um post, basta fornecer um título, um apelido (nick), e o conteúdo desejado. Utilize markdown para formatar o conteúdo conforme necessário.
+![Criar Post](criarpost.png)
+
+### 3. Página de Leitura de Posts
+
+A Página de Leitura de Posts permite que os usuários acessem postagens específicas para leitura mais detalhada. Além disso, nesta página, é possível interagir com o conteúdo, deixando comentários nas postagens existentes. Isso promove uma experiência dinâmica de discussão, permitindo que a comunidade se envolva ativamente nos tópicos apresentados.
+![Post](post.png)
+
 ### Bloqueio de Acesso por IP
 
 Para restringir o acesso de determinados IPs ao site, você pode utilizar o arquivo `blocked_ips.json`. Siga os passos abaixo:
