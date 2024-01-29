@@ -141,6 +141,7 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
      ["248.161.103.175", "142.57.70.192"]
      ```
      Isso bloqueará o acesso dos IPs listados.
+     
      ![blocked_ips.json](bip.png)
 
 3. **Redirecionamento para a Página de Bloqueio:**
