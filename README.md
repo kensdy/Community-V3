@@ -21,6 +21,19 @@ Português | [English](README.MD)
    - Instale as dependências usando `pip install -r requirements.txt`.
    - Execute `python main.py` para iniciar o servidor local.
    - Acesse `http://127.0.0.1:5000` em seu navegador para interagir com o fórum.
+  
+## Tutorial em Vídeo
+
+Confira este vídeo tutorial que demonstra a instalação e apresenta uma visão geral do Community-V3. Apesar de ser baseado na versão 1, muitos conceitos ainda se aplicam e o tutorial fornece insights úteis sobre o funcionamento do sistema.
+
+[![Tutorial em Vídeo](https://img.youtube.com/vi/j09MK7o5NCU/0.jpg)](https://www.youtube.com/watch?v=j09MK7o5NCU)
+
+Este vídeo inclui:
+
+- Instruções passo a passo para instalar e executar o Community-V1.
+- Uma breve demonstração das funcionalidades principais.
+
+Certifique-se de ajustar as informações conforme necessário, considerando as diferenças entre as versões, e aproveite o tutorial para explorar as funcionalidades do Community-V3.
 
 **Conhecendo as Funcionalidades**
 
