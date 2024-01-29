@@ -23,8 +23,6 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
 
 Isso garante um controle eficiente sobre o acesso ao site, permitindo que você restrinja específicos IPs e ofereça uma experiência de redirecionamento personalizada para aqueles que estão bloqueados.
 
-Certamente, aqui está uma melhoria para essa seção:
-
 ### Registro de Auditoria
 
 No arquivo `audit_log.txt`, você pode encontrar um registro detalhado de todos os acessos ao site, incluindo informações cruciais como o endereço IP e o horário de acesso. Esta funcionalidade proporciona uma visão abrangente das interações com o seu site, permitindo monitorar e analisar o tráfego com precisão.
@@ -45,8 +43,6 @@ No arquivo `audit_log.txt`, você pode encontrar um registro detalhado de todos 
 
 3. **Análise de Acessos:**
    - Utilize esse registro para rastrear padrões de acesso, identificar atividades suspeitas ou simplesmente monitorar a frequência de visitas ao seu site.
-  
-Para melhorar essa descrição, você pode considerar a seguinte versão:
 
 ### Gerenciamento de Dados
 
