@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, abort
 from datetime import datetime
 import markdown
 import json
@@ -29,6 +29,18 @@ def save_audit_data(ip_address, action):
     with open("audit_log.txt", "a") as file:
         file.write(f"IP Address: {ip_address} - Action: {action} - Time: {datetime.now().isoformat()}\n")
 
+def load_blocked_ips():
+    try:
+        with open("blocked_ips.json", "r") as file:
+            blocked_ips = json.load(file)
+            return blocked_ips if isinstance(blocked_ips, list) else []
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+def save_blocked_ips(blocked_ips):
+    with open("blocked_ips.json", "w") as file:
+        json.dump(blocked_ips, file, indent=4)
+
 def get_client_ip():
     if request.headers.getlist("X-Forwarded-For"):
         # Pega a primeira parte da lista dividida por vírgulas
@@ -36,6 +48,22 @@ def get_client_ip():
     else:
         ip_address = request.environ.get('REMOTE_ADDR')
     return ip_address
+
+blocked_ips = load_blocked_ips()
+
+def check_blocked_ip():
+    client_ip = get_client_ip()
+    if client_ip in blocked_ips:
+        return render_template("blocked.html")
+    return None
+
+@app.before_request
+def handle_blocked_ip():
+    blocked_template = check_blocked_ip()
+    if blocked_template:
+        response = app.make_response(blocked_template)
+        response.status_code = 403  # Status 403 Forbidden
+        return response
 
 posts = load_data()
 
@@ -77,7 +105,7 @@ def create_post():
             "author": author,
             "timestamp": datetime.now().isoformat(),
             "comments": [],
-            "ip_address": ip_address  # Add IP address information to the post
+            "ip_address": ip_address  # Adiciona a informação do endereço IP ao post
         }
 
         posts.append(new_post)
@@ -101,7 +129,7 @@ def add_comment(post_id):
         new_comment = {
             "author": comment_author,
             "content": comment_content,
-            "ip_address": ip_address  # Add IP address information to the comment
+            "ip_address": ip_address  # Adiciona a informação do endereço IP ao comentário
         }
 
         post["comments"].append(new_comment)
