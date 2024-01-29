@@ -1,5 +1,7 @@
 # Community-V3
 
+O Community é um modelo de fórum desenvolvido em Flask, projetado para facilitar discussões online de maneira simples e aberta. Este projeto open source oferece uma estrutura acessível e personalizável para atender às diversas necessidades de comunidades online.
+
 Português | [English](README.MD)
 
 [![Repository Views](https://komarev.com/ghpvc/?username=kensdycommunityv3&label=Views&color=brightgreen)](https://github.com/kensdy/Community-V3)
