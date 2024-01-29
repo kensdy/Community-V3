@@ -1,3 +1,4 @@
+<!-- templates/post.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ post['title'] }}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <!--/************************************************
+    * Name        : Community
+    * Version     : 3.0
+    * GitHub      : https://github.com/kensdy
+    * Repository  : https://github.com/kensdy/Community-V3
+  **************************************************/-->
 </head>
 <body>
+    <div class="header">
+        <a href="{{ url_for('index') }}" style="text-decoration: none;"><h1>Community</h1></a>
+    </div>
     <div class="post-container">
         <h1 class="post-title">{{ post['title'] }}</h1>
         <p class="post-content">{{ post['content']|safe }}</p>
@@ -18,14 +28,6 @@
         </div>
 
         <div class="comments-section">
-            <h2>Comentários</h2>
-            <ul>
-                {% for comment in post['comments'] %}
-                    <li>
-                        <strong>{{ comment['author'] }}</strong>: {{ comment['content'] }}
-                    </li>
-                {% endfor %}
-            </ul>
             <div class="comment-form">
                 <h3>Deixe um comentário</h3>
                 <form method="post" action="{{ url_for('add_comment', post_id=post['id']) }}">
@@ -41,6 +43,14 @@
                     </div>
                 </form>
             </div>
+            <h2>Comentários</h2>
+            <ul>
+                {% for comment in post['comments'] %}
+                    <li>
+                        <strong>{{ comment['author'] }}</strong>: {{ comment['content'] }}
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
 </body>
