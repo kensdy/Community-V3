@@ -71,10 +71,10 @@ No arquivo `data.json`, a base de dados de posts é armazenada, oferecendo funci
                 {
                     "author": "Nome do Autor",
                     "content": "Conteúdo do Comentário"
-                    "ip_address: "192.168.0.1"
+                    "ip_address: "248.161.103.175"
                 }
             ]
-            "ip_address: "192.168.0.1"
+            "ip_address: "142.57.70.192"
         }
     ]
 }
