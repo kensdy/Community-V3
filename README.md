@@ -34,6 +34,8 @@ No arquivo `audit_log.txt`, você pode encontrar um registro detalhado de todos 
 1. **Localização do Arquivo:**
    - Abra o arquivo `audit_log.txt` no diretório do projeto.
 
+     ![Arquivo de Logs](log.png)
+
 2. **Conteúdo do Registro:**
    - Cada linha do arquivo representa uma entrada de registro, exibindo o IP do usuário e o horário de acesso.
 
@@ -43,3 +45,4 @@ No arquivo `audit_log.txt`, você pode encontrar um registro detalhado de todos 
 
 3. **Análise de Acessos:**
    - Utilize esse registro para rastrear padrões de acesso, identificar atividades suspeitas ou simplesmente monitorar a frequência de visitas ao seu site.
+  
