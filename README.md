@@ -67,7 +67,7 @@ No arquivo `data.json`, a base de dados de posts é armazenada, oferecendo funci
             "content": "Conteúdo da Postagem",
             "author": "Nome do Autor",
             "timestamp": "
-Data, hora e microssegundos"
+Data e hora"
             "comments": [
                 {
                     "author": "Nome do Autor",
