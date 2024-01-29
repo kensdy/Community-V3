@@ -1,5 +1,9 @@
 # Community-V3
 
+Português | [English](README.MD)
+
+[![Repository Views](https://komarev.com/ghpvc/?username=kensdycommunityv3&label=Views&color=brightgreen)](https://github.com/kensdy/Community-V3)
+
 **Conhecendo as Funcionalidades**
 
 O Community V3 oferece uma experiência de fórum simples e intuitiva, centrada em três páginas principais:
