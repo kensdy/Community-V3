@@ -155,7 +155,7 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
 
 Isso garante um controle eficiente sobre o acesso ao site, permitindo que você restrinja específicos IPs e ofereça uma experiência de redirecionamento personalizada para aqueles que estão bloqueados.
 
-##**Licença do Community**
+## **Licença do Community**
 
 Este projeto é distribuído sob os termos da [Licença MIT](LICENSE). Ao utilizar ou contribuir para o Community, você concorda com os seguintes termos:
 
