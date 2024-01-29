@@ -1,3 +1,4 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <!--/************************************************
+    * Name        : Community
+    * Version     : 3.0
+    * GitHub      : https://github.com/kensdy
+    * Repository  : https://github.com/kensdy/Community-V3
+  **************************************************/-->
 </head>
 <body>
     <div class="header">
-        <h1>Community</h1>
+        <a href="{{ url_for('index') }}" style="text-decoration: none;"><h1>Community</h1></a>
     </div>
     <div class="posts-container">
         <h2>Posts</h2>
