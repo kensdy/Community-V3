@@ -55,6 +55,8 @@ No arquivo `data.json`, a base de dados de posts é armazenada, oferecendo funci
 #### 1. **Apagar Postagens:**
    - Através do arquivo `data.json`, é possível excluir postagens conforme necessário. Basta localizar a entrada correspondente e removê-la do arquivo para realizar a exclusão.
 
+     ![data.json](data.png)
+
 #### 2. **Informações Adicionais:**
    - O arquivo também inclui detalhes adicionais sobre as postagens, como o IP do usuário que as criou. Isso fornece uma visão mais abrangente das atividades dos usuários.
 
