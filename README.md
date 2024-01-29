@@ -10,9 +10,7 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
 2. **Adicionando IPs Bloqueados:**
    - Insira os IPs que você deseja bloquear no formato JSON. Por exemplo:
      ```json
-     {
-       "blocked_ips": ["248.161.103.175", "142.57.70.192"]
-     }
+     ["248.161.103.175", "142.57.70.192"]
      ```
      Isso bloqueará o acesso dos IPs listados.
      ![blocked_ips.json](bip.png)
