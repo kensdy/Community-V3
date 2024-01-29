@@ -114,6 +114,7 @@ O Community conta com uma funcionalidade de auditoria por meio do arquivo `audit
 
 1. **Localização do Arquivo:**
    - Abra o arquivo `audit_log.txt` no diretório do projeto.
+     
      ![Arquivo de Logs](log.png)
 
 2. **Conteúdo do Registro:**
