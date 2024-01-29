@@ -4,6 +4,22 @@ Português | [English](README.MD)
 
 [![Repository Views](https://komarev.com/ghpvc/?username=kensdycommunityv3&label=Views&color=brightgreen)](https://github.com/kensdy/Community-V3)
 
+## Como Usar
+
+1. **Pré-requisitos:**
+   - Certifique-se de ter o Python instalado em sua máquina.
+
+2. **Clonando o Repositório:**
+   - Execute o seguinte comando para clonar o repositório:
+     ```bash
+     git clone https://github.com/kensdy/Community-V3
+     ```
+3. **Executando o Aplicativo:**
+   - Navegue para o diretório recém-clonado com `cd Community`.
+   - Instale as dependências usando `pip install -r requirements.txt`.
+   - Execute `python main.py` para iniciar o servidor local.
+   - Acesse `http://127.0.0.1:5000` em seu navegador para interagir com o fórum.
+
 **Conhecendo as Funcionalidades**
 
 O Community apresenta diversas funcionalidades que visam proporcionar uma experiência robusta e amigável para os usuários:
