@@ -155,6 +155,17 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
 
 Isso garante um controle eficiente sobre o acesso ao site, permitindo que você restrinja específicos IPs e ofereça uma experiência de redirecionamento personalizada para aqueles que estão bloqueados.
 
+**Licença do Community**
 
+Este projeto é distribuído sob os termos da [Licença MIT](LICENSE). Ao utilizar ou contribuir para o Community, você concorda com os seguintes termos:
 
+1. **Reconhecimento:**
+   - O uso deste projeto requer que você forneça devidos créditos ao criador, "Kensdy". Ao exibir ou referenciar este projeto em seu trabalho, inclua uma atribuição adequada com um link para o [GitHub de Kensdy](https://github.com/kensdy).
 
+2. **Modificações e Derivados:**
+   - Se você modificar ou criar um trabalho derivado deste projeto, você pode distribuir o trabalho resultante apenas sob os termos desta licença ou de uma licença similar à MIT.
+
+3. **Isenção de Garantias:**
+   - Este projeto é fornecido "como está", sem garantias de qualquer tipo, expressas ou implícitas. Os contribuidores ou o criador não são responsáveis por quaisquer danos ou responsabilidades resultantes do uso ou mau uso deste projeto.
+
+Ao utilizar o Community, você concorda em seguir estes termos e reconhecer os créditos ao criador. A Licença MIT visa promover a colaboração e o compartilhamento de código aberto.
