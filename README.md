@@ -101,7 +101,7 @@ Essa estrutura no `data.json` possibilita um gerenciamento eficaz e personalizad
    ```
 
 #### 3. **Rastreamento de IP:**
-   - O campo `user_ip` em cada entrada permite rastrear o IP do autor da postagem, oferecendo uma camada adicional de informação sobre a origem das interações no seu site.
+   - O campo `ip_address` em cada entrada permite rastrear o IP do autor da postagem, oferecendo uma camada adicional de informação sobre a origem das interações no seu site.
 
 Utilize essas funcionalidades conforme necessário para administrar e analisar as postagens em seu fórum, garantindo um controle efetivo sobre o conteúdo e oferecendo insights adicionais sobre a atividade dos usuários.
 
