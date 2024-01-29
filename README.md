@@ -22,3 +22,24 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
 > **Nota:** Certifique-se de ajustar a página `blocked.html` conforme necessário para fornecer informações adequadas aos usuários bloqueados.
 
 Isso garante um controle eficiente sobre o acesso ao site, permitindo que você restrinja específicos IPs e ofereça uma experiência de redirecionamento personalizada para aqueles que estão bloqueados.
+
+Certamente, aqui está uma melhoria para essa seção:
+
+### Registro de Auditoria
+
+No arquivo `audit_log.txt`, você pode encontrar um registro detalhado de todos os acessos ao site, incluindo informações cruciais como o endereço IP e o horário de acesso. Esta funcionalidade proporciona uma visão abrangente das interações com o seu site, permitindo monitorar e analisar o tráfego com precisão.
+
+#### Como Utilizar
+
+1. **Localização do Arquivo:**
+   - Abra o arquivo `audit_log.txt` no diretório do projeto.
+
+2. **Conteúdo do Registro:**
+   - Cada linha do arquivo representa uma entrada de registro, exibindo o IP do usuário e o horário de acesso.
+
+     ```plaintext
+     Acesso do IP: xxx.xxx.xxx.xxx - [Data e Hora]
+     ```
+
+3. **Análise de Acessos:**
+   - Utilize esse registro para rastrear padrões de acesso, identificar atividades suspeitas ou simplesmente monitorar a frequência de visitas ao seu site.
