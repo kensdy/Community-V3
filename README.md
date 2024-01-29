@@ -2,8 +2,6 @@
 
 O Community é um modelo de fórum desenvolvido em Flask, projetado para facilitar discussões online de maneira simples e aberta. Este projeto open source oferece uma estrutura acessível e personalizável para atender às diversas necessidades de comunidades online.
 
-Português | [English](README.MD)
-
 [![Repository Views](https://komarev.com/ghpvc/?username=kensdycommunityv3&label=Views&color=brightgreen)](https://github.com/kensdy/Community-V3)
 
 ## Como Usar
@@ -39,11 +37,11 @@ Na Página de Criação de Posts, os usuários podem contribuir para a comunidad
 ### 3. Página de Leitura de Posts
 
 A Página de Leitura de Posts permite que os usuários acessem postagens específicas para leitura mais detalhada. Além disso, nesta página, é possível interagir com o conteúdo, deixando comentários nas postagens existentes. Isso promove uma experiência dinâmica de discussão, permitindo que a comunidade se envolva ativamente nos tópicos apresentados.
+![Post e Comentários](post.png)
 
 ### 4. Sistema de Posts e Comentários
 
 O sistema de posts e comentários é a espinha dorsal do Community, proporcionando uma plataforma para compartilhar ideias e expressar opiniões. Os usuários podem interagir de maneira fácil e intuitiva, estimulando discussões dinâmicas.
-![Post e Comentários](post.png)
 
 ### 5. Sem Necessidade de Login
 
@@ -71,11 +69,9 @@ No arquivo `data.json`, a base de dados de posts é armazenada, proporcionando f
 
 Essa estrutura no `data.json` possibilita um gerenciamento eficaz e personalizado dos posts e comentários, oferecendo uma base sólida para a construção e manutenção de uma comunidade online vibrante.
 
- 
 #### 1. **Apagar Postagens:**
    - Através do arquivo `data.json`, é possível excluir postagens conforme necessário. Basta localizar a entrada correspondente e removê-la do arquivo para realizar a exclusão.
-
-     ![data.json](data.png)
+   ![data.json](data.png)
 
 #### 2. **Informações Adicionais:**
    - O arquivo também inclui detalhes adicionais sobre as postagens, como o IP do usuário que as criou. Isso fornece uma visão mais abrangente das atividades dos usuários.
@@ -107,21 +103,20 @@ Essa estrutura no `data.json` possibilita um gerenciamento eficaz e personalizad
 
 Utilize essas funcionalidades conforme necessário para administrar e analisar as postagens em seu fórum, garantindo um controle efetivo sobre o conteúdo e oferecendo insights adicionais sobre a atividade dos usuários.
 
-
 ### 7. Sistema de Logs de Acessos ao Site
 
-O Community conta com uma funcionalidade de auditoria por meio do arquivo `audit_log.txt`. Este arquivo registra detalhadamente todos os acessos ao site, incluindo informações cruciais como o endereço IP e o horário de acesso. Essa funcionalidade proporciona uma visão abrangente das interações com o seu site, permitindo monitorar e analisar o tráfego com precisão.
+O Community conta com uma funcionalidade de auditoria por meio do arquivo `audit_log.txt`. Este arquivo registra detalhadamente todos os acessos ao site, incluindo informações cruciais como o endereço IP e o horário de acesso. Essa funcionalidade proporciona uma visão
+
+ abrangente das interações com o seu site, permitindo monitorar e analisar o tráfego com precisão.
 
 #### Como Utilizar
 
 1. **Localização do Arquivo:**
    - Abra o arquivo `audit_log.txt` no diretório do projeto.
-
      ![Arquivo de Logs](log.png)
 
 2. **Conteúdo do Registro:**
    - Cada linha do arquivo representa uma entrada de registro, exibindo o IP do usuário e o horário de acesso.
-
      ```plaintext
      Acesso do IP: xxx.xxx.xxx.xxx - [Data e Hora]
      ```
@@ -144,7 +139,6 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
      ["248.161.103.175", "142.57.70.192"]
      ```
      Isso bloqueará o acesso dos IPs listados.
-     
      ![blocked_ips.json](bip.png)
 
 3. **Redirecionamento para a Página de Bloqueio:**
