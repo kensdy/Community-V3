@@ -67,7 +67,7 @@ No arquivo `data.json`, a base de dados de posts é armazenada, proporcionando f
    - Cada post pode ter uma lista de comentários associados a ele, fornecendo uma experiência interativa e dinâmica.
 
 4. **Rastreamento de IP:**
-   - O arquivo `data.json` também inclui o endereço IP (`user_ip`) do autor da postagem, fornecendo informações adicionais para a análise e gerenciamento.
+   - O arquivo `data.json` também inclui o endereço IP (`ip_address`) do autor da postagem, fornecendo informações adicionais para a análise e gerenciamento.
 
 Essa estrutura no `data.json` possibilita um gerenciamento eficaz e personalizado dos posts e comentários, oferecendo uma base sólida para a construção e manutenção de uma comunidade online vibrante.
 
