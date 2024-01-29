@@ -71,6 +71,7 @@ Essa estrutura no `data.json` possibilita um gerenciamento eficaz e personalizad
 
 #### 1. **Apagar Postagens:**
    - Através do arquivo `data.json`, é possível excluir postagens conforme necessário. Basta localizar a entrada correspondente e removê-la do arquivo para realizar a exclusão.
+     
    ![data.json](data.png)
 
 #### 2. **Informações Adicionais:**
