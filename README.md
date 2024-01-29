@@ -6,7 +6,7 @@ Português | [English](README.MD)
 
 **Conhecendo as Funcionalidades**
 
-O Community V3 oferece uma experiência de fórum simples e intuitiva, centrada em três páginas principais:
+O Community apresenta diversas funcionalidades que visam proporcionar uma experiência robusta e amigável para os usuários:
 
 ### 1. Página Inicial (Home)
 
@@ -15,13 +15,34 @@ A Página Inicial exibe uma lista de todos os posts já criados no site, organiz
 
 ### 2. Página de Criação de Posts
 
-Na Página de Criação de Posts, os usuários têm a oportunidade de contribuir para a comunidade compartilhando suas ideias, experiências ou perguntas. Para criar um post, basta fornecer um título, um apelido (nick), e o conteúdo desejado. Utilize markdown para formatar o conteúdo conforme necessário.
+Na Página de Criação de Posts, os usuários podem contribuir para a comunidade compartilhando suas ideias, experiências ou perguntas. Basta fornecer um título, um apelido (nick), e o conteúdo desejado. A formatação utilizando markdown é suportada para enriquecer o conteúdo.
 ![Criar Post](criarpost.png)
 
 ### 3. Página de Leitura de Posts
 
 A Página de Leitura de Posts permite que os usuários acessem postagens específicas para leitura mais detalhada. Além disso, nesta página, é possível interagir com o conteúdo, deixando comentários nas postagens existentes. Isso promove uma experiência dinâmica de discussão, permitindo que a comunidade se envolva ativamente nos tópicos apresentados.
-![Post](post.png)
+
+### 4. Sistema de Posts e Comentários
+
+O sistema de posts e comentários é a espinha dorsal do Community, proporcionando uma plataforma para compartilhar ideias e expressar opiniões. Os usuários podem interagir de maneira fácil e intuitiva, estimulando discussões dinâmicas.
+![Post e Comentários](post.png)
+
+### 5. Sem Necessidade de Login
+
+Não é necessário realizar login para interagir com o Community. Essa abordagem simplifica o acesso, permitindo que os usuários participem rapidamente das discussões sem a necessidade de criar uma conta.
+
+### 6. Sistema de Banco de Dados em Arquivo JSON
+
+O Community utiliza um sistema de armazenamento em arquivo JSON para os posts e comentários. Essa escolha oferece simplicidade e facilidade de personalização, eliminando a necessidade de um banco de dados mais complexo.
+
+### 7. Sistema de Logs de Acessos ao Site
+
+O arquivo `audit_log.txt` registra todas as interações com o site, incluindo informações essenciais, como endereço IP e horário de acesso. Esse sistema de logs possibilita o rastreamento e a análise do tráfego no site.
+
+### 8. Sistema de Ban por IP
+
+O Community apresenta uma funcionalidade de banimento por IP. No arquivo `blocked_ips.json`, é possível bloquear o acesso de IPs específicos, redirecionando-os para uma página de bloqueio (`blocked.html`) ao tentar acessar o site.
+
 
 ### Bloqueio de Acesso por IP
 
