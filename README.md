@@ -35,7 +35,7 @@ Este vídeo inclui:
 
 Certifique-se de ajustar as informações conforme necessário, considerando as diferenças entre as versões, e aproveite o tutorial para explorar as funcionalidades do Community-V3.
 
-**Conhecendo as Funcionalidades**
+## **Conhecendo as Funcionalidades**
 
 O Community apresenta diversas funcionalidades que visam proporcionar uma experiência robusta e amigável para os usuários:
 
