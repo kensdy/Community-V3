@@ -59,24 +59,24 @@ No arquivo `data.json`, a base de dados de posts é armazenada, oferecendo funci
    - O arquivo também inclui detalhes adicionais sobre as postagens, como o IP do usuário que as criou. Isso fornece uma visão mais abrangente das atividades dos usuários.
 
    ```json
-   {
-    "posts": [
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Título da Postagem",
+      "content": "Conteúdo da Postagem",
+      "author": "Nome do Autor",
+      "timestamp": "Data e hora",
+      "comments": [
         {
-            "id": 1,
-            "title": "Título da Postagem",
-            "content": "Conteúdo da Postagem",
-            "author": "Nome do Autor",
-            "timestamp": "Data e hora"
-            "comments": [
-                {
-                    "author": "Nome do Autor",
-                    "content": "Conteúdo do Comentário"
-                    "ip_address: "248.161.103.175"
-                }
-            ]
-            "ip_address: "142.57.70.192"
+          "author": "Nome do Autor",
+          "content": "Conteúdo do Comentário",
+          "ip_address": "248.161.103.175"
         }
-    ]
+      ],
+      "ip_address": "142.57.70.192"
+    }
+  ]
 }
    ```
 
