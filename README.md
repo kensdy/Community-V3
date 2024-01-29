@@ -53,14 +53,28 @@ O Community utiliza um sistema de armazenamento em arquivo JSON para os posts e 
 
 ### 7. Sistema de Logs de Acessos ao Site
 
-O arquivo `audit_log.txt` registra todas as interações com o site, incluindo informações essenciais, como endereço IP e horário de acesso. Esse sistema de logs possibilita o rastreamento e a análise do tráfego no site.
+O Community conta com uma funcionalidade de auditoria por meio do arquivo `audit_log.txt`. Este arquivo registra detalhadamente todos os acessos ao site, incluindo informações cruciais como o endereço IP e o horário de acesso. Essa funcionalidade proporciona uma visão abrangente das interações com o seu site, permitindo monitorar e analisar o tráfego com precisão.
+
+#### Como Utilizar
+
+1. **Localização do Arquivo:**
+   - Abra o arquivo `audit_log.txt` no diretório do projeto.
+
+     ![Arquivo de Logs](log.png)
+
+2. **Conteúdo do Registro:**
+   - Cada linha do arquivo representa uma entrada de registro, exibindo o IP do usuário e o horário de acesso.
+
+     ```plaintext
+     Acesso do IP: xxx.xxx.xxx.xxx - [Data e Hora]
+     ```
+
+3. **Análise de Acessos:**
+   - Utilize esse registro para rastrear padrões de acesso, identificar atividades suspeitas ou simplesmente monitorar a frequência de visitas ao seu site.
 
 ### 8. Sistema de Ban por IP
 
-O Community apresenta uma funcionalidade de banimento por IP. No arquivo `blocked_ips.json`, é possível bloquear o acesso de IPs específicos, redirecionando-os para uma página de bloqueio (`blocked.html`) ao tentar acessar o site.
-
-
-### Bloqueio de Acesso por IP
+O Community incorpora uma funcionalidade de banimento por IP para aprimorar a segurança e a gestão da comunidade. Esta funcionalidade permite bloquear o acesso de IPs específicos, redirecionando-os automaticamente para uma página de bloqueio (`blocked.html`) ao tentar acessar o site.
 
 Para restringir o acesso de determinados IPs ao site, você pode utilizar o arquivo `blocked_ips.json`. Siga os passos abaixo:
 
@@ -82,27 +96,6 @@ Para restringir o acesso de determinados IPs ao site, você pode utilizar o arqu
 > **Nota:** Certifique-se de ajustar a página `blocked.html` conforme necessário para fornecer informações adequadas aos usuários bloqueados.
 
 Isso garante um controle eficiente sobre o acesso ao site, permitindo que você restrinja específicos IPs e ofereça uma experiência de redirecionamento personalizada para aqueles que estão bloqueados.
-
-### Registro de Auditoria
-
-No arquivo `audit_log.txt`, você pode encontrar um registro detalhado de todos os acessos ao site, incluindo informações cruciais como o endereço IP e o horário de acesso. Esta funcionalidade proporciona uma visão abrangente das interações com o seu site, permitindo monitorar e analisar o tráfego com precisão.
-
-#### Como Utilizar
-
-1. **Localização do Arquivo:**
-   - Abra o arquivo `audit_log.txt` no diretório do projeto.
-
-     ![Arquivo de Logs](log.png)
-
-2. **Conteúdo do Registro:**
-   - Cada linha do arquivo representa uma entrada de registro, exibindo o IP do usuário e o horário de acesso.
-
-     ```plaintext
-     Acesso do IP: xxx.xxx.xxx.xxx - [Data e Hora]
-     ```
-
-3. **Análise de Acessos:**
-   - Utilize esse registro para rastrear padrões de acesso, identificar atividades suspeitas ou simplesmente monitorar a frequência de visitas ao seu site.
 
 ### Gerenciamento de Dados
 
