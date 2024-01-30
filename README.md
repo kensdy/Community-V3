@@ -17,7 +17,7 @@ The Community is a Flask-based forum template designed to facilitate online disc
      git clone https://github.com/kensdy/Community-V3
      ```
 3. **Running the Application:**
-   - Navigate to the newly cloned directory with `cd Community`.
+   - Navigate to the newly cloned directory with `cd Community-V3`.
    - Install dependencies using `pip install -r requirements.txt`.
    - Run `python main.py` to start the local server.
    - Access `http://127.0.0.1:5000` in your browser to interact with the forum.
