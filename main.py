@@ -138,6 +138,6 @@ def add_comment(post_id):
     return redirect(url_for("post", post_id=post_id))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=81)
 
 # Substitua app.run(debug=True) por app.run(host='0.0.0.0', port=81) para tornar o site público
