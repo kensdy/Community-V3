@@ -5,7 +5,6 @@ The Community is a Flask-based forum template designed to facilitate online disc
 [Português](README_pt.md) | English
 
 [![Repository Views](https://komarev.com/ghpvc/?username=kensdycommunityv3&label=Views&color=brightgreen)](https://github.com/kensdy/Community-V3)
-[![Discord](https://img.shields.io/discord/1189857841708806174.svg?style=flat-square)](https://discord.gg/qAR5KVNRxc)
 
 ## How to Use
 
